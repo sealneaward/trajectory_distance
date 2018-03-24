@@ -17,7 +17,6 @@ It is implemented in both Python and Cython.
 7. LCSS (Longuest Common Subsequence)
 8. ERP (Edit distance with Real Penalty)
 9. EDR (Edit Distance on Real sequence)
- 
 
 ## Dependencies
 
@@ -30,7 +29,9 @@ The required dependencies to build the software are NumPy >= 1.9.1, Cython >= 0.
 This package uses distutils. To install in your home directory, use:
 
 ```
-python setup.py install 
+python setup.py build_ext --inplace
+python setup.py build
+python setup.py install
 ```
 
 ## How to use it
@@ -41,10 +42,10 @@ You only need to import the distance module.
 import traj_dist.distance as tdist
 ```
 
-All distances are in this module. There is also two extra function 'cdist', and 'pdist' to compute distances between all trajectories in a list. 
+All distances are in this module. There is also two extra function 'cdist', and 'pdist' to compute distances between all trajectories in a list.
 
-Trajectory should be represented as 2-Dimensions numpy array. 
-See traj_dist/example.py file. 
+Trajectory should be represented as 2-Dimensions numpy array.
+See traj_dist/example.py file.
 
 Some distance requires extra-parameters.
 See the help function for more information about how to use each distance.
@@ -70,7 +71,7 @@ polygonal curves,”
 International Journal of Computational Geometry &
 Applications
 , vol. 5, no. 01n02, pp. 75–91, 1995.*
-6. *D. J. Berndt and J. Clifford , “Using dynamic time warping to find patterns in time series.” in KDD workshop, vol. 10, no. 16. Seattle, WA, 1994, pp. 359–370* 
+6. *D. J. Berndt and J. Clifford , “Using dynamic time warping to find patterns in time series.” in KDD workshop, vol. 10, no. 16. Seattle, WA, 1994, pp. 359–370*
 7. *M. Vlachos, G. Kollios, and D. Gunopulos, “Discovering similar multi-
 dimensional trajectories,” in
 Data Engineering, 2002. Proceedings. 18th

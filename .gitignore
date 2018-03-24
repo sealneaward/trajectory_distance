@@ -1,7 +1,10 @@
 dist/
-distance.pyc
+*.pyc
 .idea/
 build/
 .DS_Store
 deprecated/
 test/
+*.egg-info
+**/venv/**
+*.so

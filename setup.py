@@ -27,5 +27,5 @@ setup(
     include_dirs=[numpy.get_include()],
     install_requires =  ["numpy>=1.9.1", "cython>=0.21.2", "shapely>=1.5.6", "Geohash"],
     description = "Distance to compare trajectories in Cython",
-    packages = ["traj_dist", "traj_dist.cydist", "traj_dist.pydist"],
+    packages = find_packages(),
 )

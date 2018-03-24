@@ -1,0 +1,6 @@
+Cython==0.28.1
+docutils==0.14
+Geohash==1.0
+numpy==1.14.2
+Shapely==1.6.4.post1
+trajectory-distance==1.0
